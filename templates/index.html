@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlinkWeb bestillingsgenerator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>BlinkWeb bestillingsgenerator</h1>
+    <form action="/submit" method="post">
+        <label for="selger">Selger:</label>
+        <select id="selger" name="selger">
+            <option value="Arya Raeesi">Arya Raeesi</option>
+            <option value="Isak Rysst">Isak Rysst</option>
+        </select><br><br>
+
+        <label for="org_number">Organisasjonsnummer:</label>
+        <input type="text" id="org_number" name="org_number"><br><br>
+
+        <label for="email">E-post faktura:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="price">Pris:</label>
+        <input type="number" id="price" name="price"><br><br>
+
+        <label for="service">Tjeneste:</label>
+        <select id="service" name="service">
+            <option value="Digital profilering">Digital profilering</option>
+            <option value="Etableringspakke hjemmeside">Etableringspakke hjemmeside</option>
+            <option value="Komplett nettsidepakke">Komplett nettsidepakke</option>
+        </select><br><br>
+
+        <label for="person_name">Kontaktperson navn:</label>
+        <input type="text" id="person_name" name="person_name"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
